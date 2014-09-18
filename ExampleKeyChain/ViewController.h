@@ -7,7 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "KeychainItemWrapper.h"
 @interface ViewController : UIViewController
+{
+    KeychainItemWrapper *wrapper;
+    
+    //KeychainItemWrapper *passwordItem;
+    //KeychainItemWrapper *accountNumberItem;
+    
+   IBOutlet UIToolbar *toolbar;
+}
+@property (weak, nonatomic) IBOutlet UIButton *btnsave;
+@property (weak, nonatomic) IBOutlet UIButton *btnshowencrpted;
+@property (weak, nonatomic) IBOutlet UIButton *btnshowdecrypted;
+@property (weak, nonatomic) IBOutlet UIButton *btndelete;
+
+
+
+//@property (nonatomic, retain) KeychainItemWrapper *passwordItem;
+//@property (nonatomic, retain) KeychainItemWrapper *usernameItem;
+
+- (IBAction)saveUserDetails:(id)sender;
+- (IBAction)showEncrypteddata:(id)sender;
+- (IBAction)showPlaindata:(id)sender;
+- (IBAction)deleteFromKeychain:(id)sender;
 
 @end

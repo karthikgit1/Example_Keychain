@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2631417419C846180099F70B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2631417319C846180099F70B /* Reachability.m */; };
+		269E663719C6A80E005BD50D /* singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 269E663619C6A80E005BD50D /* singleton.m */; };
+		269E663A19C6BAE5005BD50D /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269E663919C6BAE5005BD50D /* CheckoutViewController.m */; };
+		269E663C19C6BD4B005BD50D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269E663B19C6BD4B005BD50D /* CoreData.framework */; };
+		26C7950119B9C27A00FD6ACD /* Crackify.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C7950019B9C27A00FD6ACD /* Crackify.m */; };
+		26C7950319B9CBFA00FD6ACD /* smart.png in Resources */ = {isa = PBXBuildFile; fileRef = 26C7950219B9CBFA00FD6ACD /* smart.png */; };
+		26C7950519B9CC1B00FD6ACD /* personal5.png in Resources */ = {isa = PBXBuildFile; fileRef = 26C7950419B9CC1B00FD6ACD /* personal5.png */; };
 		26C9A3B619B8289D0011A1F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9A3B519B8289D0011A1F9 /* Foundation.framework */; };
 		26C9A3B819B8289D0011A1F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9A3B719B8289D0011A1F9 /* CoreGraphics.framework */; };
 		26C9A3BA19B8289D0011A1F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9A3B919B8289D0011A1F9 /* UIKit.framework */; };
@@ -21,6 +28,16 @@
 		26C9A3D719B8289D0011A1F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9A3B919B8289D0011A1F9 /* UIKit.framework */; };
 		26C9A3DF19B8289D0011A1F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26C9A3DD19B8289D0011A1F9 /* InfoPlist.strings */; };
 		26C9A3E119B8289D0011A1F9 /* ExampleKeyChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9A3E019B8289D0011A1F9 /* ExampleKeyChainTests.m */; };
+		26C9A3EB19B829240011A1F9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9A3EA19B829240011A1F9 /* Security.framework */; };
+		26C9A3ED19B829300011A1F9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9A3EC19B829300011A1F9 /* MobileCoreServices.framework */; };
+		26C9A42219B83FE40011A1F9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 26C9A41719B83FE40011A1F9 /* .gitignore */; };
+		26C9A42319B83FE40011A1F9 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9A41919B83FE40011A1F9 /* AESCrypt.m */; };
+		26C9A42419B83FE40011A1F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 26C9A41A19B83FE40011A1F9 /* LICENSE */; };
+		26C9A42519B83FE40011A1F9 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9A41C19B83FE40011A1F9 /* NSData+Base64.m */; };
+		26C9A42619B83FE40011A1F9 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9A41E19B83FE40011A1F9 /* NSData+CommonCrypto.m */; };
+		26C9A42719B83FE40011A1F9 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9A42019B83FE40011A1F9 /* NSString+Base64.m */; };
+		26C9A42819B83FE40011A1F9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 26C9A42119B83FE40011A1F9 /* README.md */; };
+		26C9A42E19B88A700011A1F9 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C9A42D19B88A700011A1F9 /* KeychainItemWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2631417219C846180099F70B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		2631417319C846180099F70B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		269E663519C6A80E005BD50D /* singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleton.h; sourceTree = "<group>"; };
+		269E663619C6A80E005BD50D /* singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singleton.m; sourceTree = "<group>"; };
+		269E663819C6BAE5005BD50D /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
+		269E663919C6BAE5005BD50D /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
+		269E663B19C6BD4B005BD50D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		26C794FF19B9C27A00FD6ACD /* Crackify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crackify.h; sourceTree = "<group>"; };
+		26C7950019B9C27A00FD6ACD /* Crackify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crackify.m; sourceTree = "<group>"; };
+		26C7950219B9CBFA00FD6ACD /* smart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smart.png; sourceTree = "<group>"; };
+		26C7950419B9CC1B00FD6ACD /* personal5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal5.png; sourceTree = "<group>"; };
 		26C9A3B219B8289D0011A1F9 /* ExampleKeyChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleKeyChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C9A3B519B8289D0011A1F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		26C9A3B719B8289D0011A1F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +81,21 @@
 		26C9A3DC19B8289D0011A1F9 /* ExampleKeyChainTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleKeyChainTests-Info.plist"; sourceTree = "<group>"; };
 		26C9A3DE19B8289D0011A1F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26C9A3E019B8289D0011A1F9 /* ExampleKeyChainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleKeyChainTests.m; sourceTree = "<group>"; };
+		26C9A3EA19B829240011A1F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		26C9A3EC19B829300011A1F9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		26C9A41719B83FE40011A1F9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		26C9A41819B83FE40011A1F9 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		26C9A41919B83FE40011A1F9 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		26C9A41A19B83FE40011A1F9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		26C9A41B19B83FE40011A1F9 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		26C9A41C19B83FE40011A1F9 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		26C9A41D19B83FE40011A1F9 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		26C9A41E19B83FE40011A1F9 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		26C9A41F19B83FE40011A1F9 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		26C9A42019B83FE40011A1F9 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		26C9A42119B83FE40011A1F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		26C9A42C19B88A700011A1F9 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		26C9A42D19B88A700011A1F9 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +103,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269E663C19C6BD4B005BD50D /* CoreData.framework in Frameworks */,
+				26C9A3ED19B829300011A1F9 /* MobileCoreServices.framework in Frameworks */,
+				26C9A3EB19B829240011A1F9 /* Security.framework in Frameworks */,
 				26C9A3B819B8289D0011A1F9 /* CoreGraphics.framework in Frameworks */,
 				26C9A3BA19B8289D0011A1F9 /* UIKit.framework in Frameworks */,
 				26C9A3B619B8289D0011A1F9 /* Foundation.framework in Frameworks */,
@@ -101,6 +147,9 @@
 		26C9A3B419B8289D0011A1F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				269E663B19C6BD4B005BD50D /* CoreData.framework */,
+				26C9A3EC19B829300011A1F9 /* MobileCoreServices.framework */,
+				26C9A3EA19B829240011A1F9 /* Security.framework */,
 				26C9A3B519B8289D0011A1F9 /* Foundation.framework */,
 				26C9A3B719B8289D0011A1F9 /* CoreGraphics.framework */,
 				26C9A3B919B8289D0011A1F9 /* UIKit.framework */,
@@ -112,6 +161,13 @@
 		26C9A3BB19B8289D0011A1F9 /* ExampleKeyChain */ = {
 			isa = PBXGroup;
 			children = (
+				2631417219C846180099F70B /* Reachability.h */,
+				2631417319C846180099F70B /* Reachability.m */,
+				26C7950419B9CC1B00FD6ACD /* personal5.png */,
+				26C7950219B9CBFA00FD6ACD /* smart.png */,
+				26C794FF19B9C27A00FD6ACD /* Crackify.h */,
+				26C7950019B9C27A00FD6ACD /* Crackify.m */,
+				26C9A41619B83FE40011A1F9 /* AESCrypt */,
 				26C9A3C419B8289D0011A1F9 /* AppDelegate.h */,
 				26C9A3C519B8289D0011A1F9 /* AppDelegate.m */,
 				26C9A3C719B8289D0011A1F9 /* Main.storyboard */,
@@ -119,6 +175,12 @@
 				26C9A3CB19B8289D0011A1F9 /* ViewController.m */,
 				26C9A3CD19B8289D0011A1F9 /* Images.xcassets */,
 				26C9A3BC19B8289D0011A1F9 /* Supporting Files */,
+				26C9A42C19B88A700011A1F9 /* KeychainItemWrapper.h */,
+				26C9A42D19B88A700011A1F9 /* KeychainItemWrapper.m */,
+				269E663519C6A80E005BD50D /* singleton.h */,
+				269E663619C6A80E005BD50D /* singleton.m */,
+				269E663819C6BAE5005BD50D /* CheckoutViewController.h */,
+				269E663919C6BAE5005BD50D /* CheckoutViewController.m */,
 			);
 			path = ExampleKeyChain;
 			sourceTree = "<group>";
@@ -150,6 +212,25 @@
 				26C9A3DD19B8289D0011A1F9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26C9A41619B83FE40011A1F9 /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				26C9A41719B83FE40011A1F9 /* .gitignore */,
+				26C9A41819B83FE40011A1F9 /* AESCrypt.h */,
+				26C9A41919B83FE40011A1F9 /* AESCrypt.m */,
+				26C9A41A19B83FE40011A1F9 /* LICENSE */,
+				26C9A41B19B83FE40011A1F9 /* NSData+Base64.h */,
+				26C9A41C19B83FE40011A1F9 /* NSData+Base64.m */,
+				26C9A41D19B83FE40011A1F9 /* NSData+CommonCrypto.h */,
+				26C9A41E19B83FE40011A1F9 /* NSData+CommonCrypto.m */,
+				26C9A41F19B83FE40011A1F9 /* NSString+Base64.h */,
+				26C9A42019B83FE40011A1F9 /* NSString+Base64.m */,
+				26C9A42119B83FE40011A1F9 /* README.md */,
+			);
+			name = AESCrypt;
+			path = "AESCrypt-ObjC-master";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +309,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C9A42419B83FE40011A1F9 /* LICENSE in Resources */,
+				26C7950519B9CC1B00FD6ACD /* personal5.png in Resources */,
+				26C9A42219B83FE40011A1F9 /* .gitignore in Resources */,
+				26C9A42819B83FE40011A1F9 /* README.md in Resources */,
 				26C9A3CE19B8289D0011A1F9 /* Images.xcassets in Resources */,
 				26C9A3C019B8289D0011A1F9 /* InfoPlist.strings in Resources */,
 				26C9A3C919B8289D0011A1F9 /* Main.storyboard in Resources */,
+				26C7950319B9CBFA00FD6ACD /* smart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +335,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269E663A19C6BAE5005BD50D /* CheckoutViewController.m in Sources */,
+				26C9A42719B83FE40011A1F9 /* NSString+Base64.m in Sources */,
+				26C7950119B9C27A00FD6ACD /* Crackify.m in Sources */,
 				26C9A3CC19B8289D0011A1F9 /* ViewController.m in Sources */,
+				269E663719C6A80E005BD50D /* singleton.m in Sources */,
 				26C9A3C619B8289D0011A1F9 /* AppDelegate.m in Sources */,
+				26C9A42519B83FE40011A1F9 /* NSData+Base64.m in Sources */,
+				26C9A42E19B88A700011A1F9 /* KeychainItemWrapper.m in Sources */,
+				26C9A42619B83FE40011A1F9 /* NSData+CommonCrypto.m in Sources */,
+				26C9A42319B83FE40011A1F9 /* AESCrypt.m in Sources */,
+				2631417419C846180099F70B /* Reachability.m in Sources */,
 				26C9A3C219B8289D0011A1F9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +474,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleKeyChain/ExampleKeyChain-Prefix.pch";
 				INFOPLIST_FILE = "ExampleKeyChain/ExampleKeyChain-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +488,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleKeyChain/ExampleKeyChain-Prefix.pch";
 				INFOPLIST_FILE = "ExampleKeyChain/ExampleKeyChain-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +553,7 @@
 				26C9A3E619B8289D0011A1F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26C9A3E719B8289D0011A1F9 /* Build configuration list for PBXNativeTarget "ExampleKeyChainTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +562,7 @@
 				26C9A3E919B8289D0011A1F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

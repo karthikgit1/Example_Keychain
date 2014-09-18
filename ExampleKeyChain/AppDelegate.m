@@ -8,13 +8,75 @@
 
 #import "AppDelegate.h"
 
-@implementation AppDelegate
 
+#import "KeychainItemWrapper.h"
+#import "singleton.h"
+#import "AESCrypt.h"
+
+@implementation AppDelegate
+@synthesize managedObjectContext = __managedObjectContext;
+@synthesize managedObjectModel = __managedObjectModel;
+@synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+
+KeychainItemWrapper *wrapper;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self getData];
+   
     return YES;
 }
+
+-(void)getData
+{
+    wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"com.sample.keychain" accessGroup:nil];
+    
+    
+    
+    NSString *_stringfromkeychain;
+    NSData *_datafrmkeychain,*_archive;
+    id obj;
+    
+    /********************************************
+     *********Get Password from keychain*************
+     ****************************************
+     */
+    _stringfromkeychain = [wrapper objectForKey:(__bridge id)(kSecValueData)];
+    ;
+    
+    // NSLog(@"somestring is %@",_stringfromkeychain);
+    _archive = [NSKeyedArchiver archivedDataWithRootObject:_stringfromkeychain];
+    
+    obj = [NSKeyedUnarchiver unarchiveObjectWithData:_archive];
+    if ([obj isKindOfClass:[NSString class]])
+    {
+        NSLog(@"nsstring");
+        
+        NSString *message = [AESCrypt decrypt:_stringfromkeychain password:[NSString stringWithFormat:@"%s", [singleton getData]]];
+        
+        NSLog(@"decryped pwd is %@",message);
+    }
+    else if ([obj isKindOfClass:[NSData class]])
+    {
+        NSLog(@"NsData");
+        
+        _datafrmkeychain = [wrapper objectForKey:(__bridge id)(kSecValueData)];
+        
+        NSString *message = [AESCrypt decrypt:[[NSString alloc] initWithData:_datafrmkeychain encoding:NSUTF8StringEncoding] password:[NSString stringWithFormat:@"%s", [singleton getData]]];
+        
+        NSLog(@"decryped pwd is %@",message);
+    }
+    
+    
+    /********************************************
+     *********Get Username from keychain*************
+     ****************************************
+     */
+    
+}
+
+
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -26,6 +88,13 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [UIPasteboard generalPasteboard].items = nil;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    //Validate input from the url
+    return YES;
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -42,5 +111,17 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+/**
+ Returns the URL to the application's Documents directory.
+ */
+- (NSURL *)applicationDocumentsDirectory
+{
+    
+    
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+
 
 @end
