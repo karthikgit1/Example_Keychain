@@ -12,6 +12,14 @@
 
 #import "singleton.h"
 #import "AESCrypt.h"
+#import <CommonCrypto/CommonCryptor.h>
+#import "FBEncryptorAES.h"
+
+#import "RNEncryptor.h"
+#import "RNCryptor.h"
+
+#import "NSString+AESCrypt.h"
+#import "NSData+AESCrypt.h"
 
 
 ///********use malloc instaed
@@ -50,7 +58,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-  // wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"com.sample.keychain" accessGroup:nil];
+   wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"com.sample.keychain" accessGroup:nil];
     
   // int *lotteryNumbers = malloc(sizeof(int) * 6);
     
@@ -165,9 +173,9 @@
 {
     
      wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"com.sample.keychain" accessGroup:nil];
-    username = @"UserName";
-    password = @"PassWord";
-    secretkey = @"SecretKey";
+    username = @"PA-37";
+//    password = @"PassWord";
+//    secretkey = @"SecretKey";
     
     //NSString *encryptedPwd = [AESCrypt encrypt:password password:SYMMETRICKEY];
     NSString *encryptedPwd = [AESCrypt encrypt:password password:[NSString stringWithFormat:@"%s", [singleton getData]]];
@@ -407,9 +415,57 @@
 
 - (IBAction)deleteFromKeychain:(id)sender
 {
-    [wrapper resetKeychainItem];
-    wrapper = nil;
+    //BBBBBB
+//    [wrapper resetKeychainItem];
+//    wrapper = nil;
+    
+    NSString *encryptedtext;
+    
+   // NSString *key = @"a16byteslongkey!a16byteslongkey!";
+    
+    // NSString *key = @"a16byteslongkey!";
+
+    
+//    NSData *plaintext =  [[@"PA-37" dataUsingEncoding:NSASCIIStringEncoding] AES256EncryptWithKey: key];
+//    
+//  encryptedtext =  [[NSString alloc] initWithData:plaintext encoding:NSUTF8StringEncoding];
+    
+//    _datafrmkeychain = [wrapper objectForKey:(__bridge id)(kSecAttrService)];
+//    
+//    NSString *message = [[NSString alloc] initWithData:_datafrmkeychain encoding:NSUTF8StringEncoding];
+    
+//    NSString *key = @"a16byteslongkey!a16byteslongkey!";
+//    NSString *plaintext = @"iphone";
+//    
+//    NSString *ciphertext = [plaintext AES256EncryptWithKey: key];
+//    NSLog(@"ciphertext: %@", ciphertext);
+//    
+//    plaintext = [ciphertext AES256DecryptWithKey: key];
+//    NSLog(@"plaintext: %@", plaintext);
+    
+    NSLog(@"encrypted: %@", encryptedtext);
+    
+//    NSData *data = [@"PA-37" dataUsingEncoding:NSUTF8StringEncoding];
+//    NSError *error;
+//    NSData *encryptedData = [RNEncryptor encryptData:data
+//                                        withSettings:kRNCryptorAES256Settings
+//                                            password:key
+//                                               error:&error];
+//
+//     encryptedtext =  [[NSString alloc] initWithData:encryptedData encoding:NSUTF8StringEncoding];
+//    NSLog(@"encrypted: %@", encryptedtext);
+    
+    NSString *key = @"a$sYm#k*kaA@e%Bw";
+    NSString *plaintext = @"PA-69";
+    
+    NSString *ciphertext = [plaintext AES128EncryptWithKey: [NSString stringWithFormat:@"%s", [singleton getData]]];
+    NSLog(@"ciphertext: %@", ciphertext);
+    
+//    plaintext = [ciphertext AES256DecryptWithKey: key];
+//    NSLog(@"plaintext: %@", plaintext);
 }
 
+
 #pragma Helper Methods
+
 @end

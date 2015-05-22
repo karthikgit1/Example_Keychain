@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "KeychainItemWrapper.h"
+#import "NSData+AES256.h"
 @interface ViewController : UIViewController
 {
     KeychainItemWrapper *wrapper;

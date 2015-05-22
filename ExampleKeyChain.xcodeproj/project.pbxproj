@@ -8,9 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2631417419C846180099F70B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2631417319C846180099F70B /* Reachability.m */; };
+		269CE1B31AB00F66007FEB03 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1B21AB00F66007FEB03 /* NSData+AES256.m */; };
+		269CE1B81AB01723007FEB03 /* FBEncryptorAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1B51AB01723007FEB03 /* FBEncryptorAES.m */; };
+		269CE1B91AB01723007FEB03 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1B71AB01723007FEB03 /* NSData+Base64.m */; };
+		269CE1BC1AB02300007FEB03 /* NSString+Aes256.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1BB1AB02300007FEB03 /* NSString+Aes256.m */; };
+		269CE1C81AB025EA007FEB03 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1C11AB025EA007FEB03 /* RNCryptor.m */; };
+		269CE1C91AB025EA007FEB03 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1C31AB025EA007FEB03 /* RNCryptorEngine.m */; };
+		269CE1CA1AB025EA007FEB03 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1C51AB025EA007FEB03 /* RNDecryptor.m */; };
+		269CE1CB1AB025EA007FEB03 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1C71AB025EA007FEB03 /* RNEncryptor.m */; };
+		269CE1D21AB0391F007FEB03 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1CE1AB0391F007FEB03 /* NSData+AESCrypt.m */; };
+		269CE1D31AB0391F007FEB03 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CE1D01AB0391F007FEB03 /* NSString+AESCrypt.m */; };
+		269CE1D41AB0391F007FEB03 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 269CE1D11AB0391F007FEB03 /* README */; };
 		269E663719C6A80E005BD50D /* singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 269E663619C6A80E005BD50D /* singleton.m */; };
 		269E663A19C6BAE5005BD50D /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269E663919C6BAE5005BD50D /* CheckoutViewController.m */; };
 		269E663C19C6BD4B005BD50D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269E663B19C6BD4B005BD50D /* CoreData.framework */; };
+		269F96791AA9D7D7004F6719 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269F96781AA9D7D7004F6719 /* OtherViewController.m */; };
 		26C7950119B9C27A00FD6ACD /* Crackify.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C7950019B9C27A00FD6ACD /* Crackify.m */; };
 		26C7950319B9CBFA00FD6ACD /* smart.png in Resources */ = {isa = PBXBuildFile; fileRef = 26C7950219B9CBFA00FD6ACD /* smart.png */; };
 		26C7950519B9CC1B00FD6ACD /* personal5.png in Resources */ = {isa = PBXBuildFile; fileRef = 26C7950419B9CC1B00FD6ACD /* personal5.png */; };
@@ -53,11 +65,36 @@
 /* Begin PBXFileReference section */
 		2631417219C846180099F70B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2631417319C846180099F70B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		269CE1B11AB00F66007FEB03 /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		269CE1B21AB00F66007FEB03 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		269CE1B41AB01723007FEB03 /* FBEncryptorAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBEncryptorAES.h; sourceTree = "<group>"; };
+		269CE1B51AB01723007FEB03 /* FBEncryptorAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBEncryptorAES.m; sourceTree = "<group>"; };
+		269CE1B61AB01723007FEB03 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		269CE1B71AB01723007FEB03 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		269CE1BA1AB02300007FEB03 /* NSString+Aes256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Aes256.h"; sourceTree = "<group>"; };
+		269CE1BB1AB02300007FEB03 /* NSString+Aes256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Aes256.m"; sourceTree = "<group>"; };
+		269CE1BE1AB025EA007FEB03 /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		269CE1BF1AB025EA007FEB03 /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		269CE1C01AB025EA007FEB03 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		269CE1C11AB025EA007FEB03 /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		269CE1C21AB025EA007FEB03 /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		269CE1C31AB025EA007FEB03 /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		269CE1C41AB025EA007FEB03 /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		269CE1C51AB025EA007FEB03 /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		269CE1C61AB025EA007FEB03 /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		269CE1C71AB025EA007FEB03 /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		269CE1CD1AB0391F007FEB03 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		269CE1CE1AB0391F007FEB03 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
+		269CE1CF1AB0391F007FEB03 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
+		269CE1D01AB0391F007FEB03 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
+		269CE1D11AB0391F007FEB03 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		269E663519C6A80E005BD50D /* singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = singleton.h; sourceTree = "<group>"; };
 		269E663619C6A80E005BD50D /* singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = singleton.m; sourceTree = "<group>"; };
 		269E663819C6BAE5005BD50D /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
 		269E663919C6BAE5005BD50D /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
 		269E663B19C6BD4B005BD50D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		269F96771AA9D7D7004F6719 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		269F96781AA9D7D7004F6719 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		26C794FF19B9C27A00FD6ACD /* Crackify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crackify.h; sourceTree = "<group>"; };
 		26C7950019B9C27A00FD6ACD /* Crackify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crackify.m; sourceTree = "<group>"; };
 		26C7950219B9CBFA00FD6ACD /* smart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smart.png; sourceTree = "<group>"; };
@@ -125,6 +162,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269CE1BD1AB025EA007FEB03 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				269CE1BE1AB025EA007FEB03 /* RNCryptor+Private.h */,
+				269CE1BF1AB025EA007FEB03 /* RNCryptor-Prefix.pch */,
+				269CE1C01AB025EA007FEB03 /* RNCryptor.h */,
+				269CE1C11AB025EA007FEB03 /* RNCryptor.m */,
+				269CE1C21AB025EA007FEB03 /* RNCryptorEngine.h */,
+				269CE1C31AB025EA007FEB03 /* RNCryptorEngine.m */,
+				269CE1C41AB025EA007FEB03 /* RNDecryptor.h */,
+				269CE1C51AB025EA007FEB03 /* RNDecryptor.m */,
+				269CE1C61AB025EA007FEB03 /* RNEncryptor.h */,
+				269CE1C71AB025EA007FEB03 /* RNEncryptor.m */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		269CE1CC1AB0391F007FEB03 /* AES128Encryption-ObjC-master */ = {
+			isa = PBXGroup;
+			children = (
+				269CE1CD1AB0391F007FEB03 /* NSData+AESCrypt.h */,
+				269CE1CE1AB0391F007FEB03 /* NSData+AESCrypt.m */,
+				269CE1CF1AB0391F007FEB03 /* NSString+AESCrypt.h */,
+				269CE1D01AB0391F007FEB03 /* NSString+AESCrypt.m */,
+				269CE1D11AB0391F007FEB03 /* README */,
+			);
+			path = "AES128Encryption-ObjC-master";
+			sourceTree = "<group>";
+		};
 		26C9A3A919B8289D0011A1F9 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +227,12 @@
 		26C9A3BB19B8289D0011A1F9 /* ExampleKeyChain */ = {
 			isa = PBXGroup;
 			children = (
+				269CE1CC1AB0391F007FEB03 /* AES128Encryption-ObjC-master */,
+				269CE1BD1AB025EA007FEB03 /* RNCryptor */,
+				269CE1B41AB01723007FEB03 /* FBEncryptorAES.h */,
+				269CE1B51AB01723007FEB03 /* FBEncryptorAES.m */,
+				269CE1B61AB01723007FEB03 /* NSData+Base64.h */,
+				269CE1B71AB01723007FEB03 /* NSData+Base64.m */,
 				2631417219C846180099F70B /* Reachability.h */,
 				2631417319C846180099F70B /* Reachability.m */,
 				26C7950419B9CC1B00FD6ACD /* personal5.png */,
@@ -181,6 +253,12 @@
 				269E663619C6A80E005BD50D /* singleton.m */,
 				269E663819C6BAE5005BD50D /* CheckoutViewController.h */,
 				269E663919C6BAE5005BD50D /* CheckoutViewController.m */,
+				269F96771AA9D7D7004F6719 /* OtherViewController.h */,
+				269F96781AA9D7D7004F6719 /* OtherViewController.m */,
+				269CE1B11AB00F66007FEB03 /* NSData+AES256.h */,
+				269CE1B21AB00F66007FEB03 /* NSData+AES256.m */,
+				269CE1BA1AB02300007FEB03 /* NSString+Aes256.h */,
+				269CE1BB1AB02300007FEB03 /* NSString+Aes256.m */,
 			);
 			path = ExampleKeyChain;
 			sourceTree = "<group>";
@@ -309,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269CE1D41AB0391F007FEB03 /* README in Resources */,
 				26C9A42419B83FE40011A1F9 /* LICENSE in Resources */,
 				26C7950519B9CC1B00FD6ACD /* personal5.png in Resources */,
 				26C9A42219B83FE40011A1F9 /* .gitignore in Resources */,
@@ -335,18 +414,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269CE1CB1AB025EA007FEB03 /* RNEncryptor.m in Sources */,
+				269CE1D21AB0391F007FEB03 /* NSData+AESCrypt.m in Sources */,
 				269E663A19C6BAE5005BD50D /* CheckoutViewController.m in Sources */,
 				26C9A42719B83FE40011A1F9 /* NSString+Base64.m in Sources */,
 				26C7950119B9C27A00FD6ACD /* Crackify.m in Sources */,
 				26C9A3CC19B8289D0011A1F9 /* ViewController.m in Sources */,
+				269CE1CA1AB025EA007FEB03 /* RNDecryptor.m in Sources */,
 				269E663719C6A80E005BD50D /* singleton.m in Sources */,
+				269CE1C81AB025EA007FEB03 /* RNCryptor.m in Sources */,
+				269CE1B91AB01723007FEB03 /* NSData+Base64.m in Sources */,
 				26C9A3C619B8289D0011A1F9 /* AppDelegate.m in Sources */,
+				269F96791AA9D7D7004F6719 /* OtherViewController.m in Sources */,
 				26C9A42519B83FE40011A1F9 /* NSData+Base64.m in Sources */,
 				26C9A42E19B88A700011A1F9 /* KeychainItemWrapper.m in Sources */,
 				26C9A42619B83FE40011A1F9 /* NSData+CommonCrypto.m in Sources */,
+				269CE1B81AB01723007FEB03 /* FBEncryptorAES.m in Sources */,
 				26C9A42319B83FE40011A1F9 /* AESCrypt.m in Sources */,
+				269CE1C91AB025EA007FEB03 /* RNCryptorEngine.m in Sources */,
 				2631417419C846180099F70B /* Reachability.m in Sources */,
+				269CE1B31AB00F66007FEB03 /* NSData+AES256.m in Sources */,
+				269CE1D31AB0391F007FEB03 /* NSString+AESCrypt.m in Sources */,
 				26C9A3C219B8289D0011A1F9 /* main.m in Sources */,
+				269CE1BC1AB02300007FEB03 /* NSString+Aes256.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

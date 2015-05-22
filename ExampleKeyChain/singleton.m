@@ -28,13 +28,13 @@
 +(char *)getData
 {
     char* p12;
-    p12 = (char*)malloc(sizeof(char)*12);
+    p12 = (char*)malloc(sizeof(char)*16);
     
    // strcpy(p12,"Sy#m$1cK%@");
     
     free(p12);
     
-    return strcpy(p12,"Sy#m$1cK%@");
+    return strcpy(p12,"a$sYm#k*kaA@e%Bw");
 }
 
 @end

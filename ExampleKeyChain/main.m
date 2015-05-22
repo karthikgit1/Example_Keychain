@@ -15,7 +15,7 @@
 #include <unistd.h>
 #include <sys/sysctl.h>
 #include <stdlib.h>
-#include <sys/ptrace.h>
+//#include <sys/ptrace.h>
 
 #include "Crackify.h"
 
